@@ -10,7 +10,7 @@ body {
 
 .score {
     font-family: "CursedTimer";
-    align-items: center;
+    vertical-align: middle;
     background: #080001;
     font-size: 90px;
     color: #F94F6D;
