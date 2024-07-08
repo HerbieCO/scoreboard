@@ -31,5 +31,5 @@ function increaseGuestScoreTwo(){
 
 function increaseGuestScoreThree(){
     guestScore += 3
-    guestStoreEl.textContent = guestScore
+    guestScoreEl.textContent = guestScore
 }
