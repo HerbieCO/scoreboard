@@ -1,32 +1,32 @@
-let homeStoreEl =document.getElementById("home-score")
+let homeScoreEl =document.getElementById("home-score")
 let homeScore = 0
 
-let guestStoreEl =document.getElementById("guest-score")
+let guestScoreEl =document.getElementById("guest-score")
 let guestScore = 0
 
 function increaseHomeScoreOne(){
     homeScore += 1
-    homeStoreEl.textContent = homeScore
+    homeScoreEl.textContent = homeScore
 }
 
 function increaseHomeScoreTwo(){
     homeScore += 2
-    homeStoreEl.textContent = homeScore
+    homeScoreEl.textContent = homeScore
 }
 
 function increaseHomeScoreThree(){
     homeScore += 3
-    homeStoreEl.textContent = homeScore
+    homeScoreEl.textContent = homeScore
 }
 
 function increaseGuestScoreOne(){
     guestScore += 1
-    guestStoreEl.textContent = guestScore
+    guestScoreEl.textContent = guestScore
 }
 
 function increaseGuestScoreTwo(){
     guestScore += 2
-    guestStoreEl.textContent = guestScore
+    guestScoreEl.textContent = guestScore
 }
 
 function increaseGuestScoreThree(){
