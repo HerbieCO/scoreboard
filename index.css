@@ -4,7 +4,7 @@ body {
 }
 
 .score {
-    background: #0a0001;
+    background: #080001;
     font-size: 90px;
     color: #F94F6D;
     width: 120px;
@@ -14,6 +14,10 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
+
+    background: #1B244A;
+    max-width: 80%;
+    margin: auto;
 }
 
 button {
