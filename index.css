@@ -17,7 +17,8 @@ body {
     justify-content: space-around;
 
     background: #1B244A;
-    max-width: 80%;
+    width: 575px;
+    height: 385px;
     margin: auto;
 }
 
