@@ -29,6 +29,7 @@ body {
 }
 
 button {
+    font-family: "CursedTimer"
     background: none;
     width: 45px;
     height: 45px;
