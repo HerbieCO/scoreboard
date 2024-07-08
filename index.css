@@ -30,6 +30,7 @@ body {
 
 button {
     font-family: "CursedTimer";
+    font-size: 18px;
     background: none;
     width: 45px;
     height: 45px;
