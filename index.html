@@ -1,22 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="eng">
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="/CursedTimerUlil-Aznm.ttf">
     </head>
     <body>
-        <div class="container">
-            <div>
+        <div id="container">
+            <div class="team">
                 <h3>HOME</h3>
-                <h2 id="home-score" class="score">0</h2>
-                <button id="home-score-btn-1" onclick="increaseHomeScoreOne()">+1</button>
-                <button id="home-score-btn-2" onclick="increaseHomeScoreTwo()">+2</button>
-                <button id="home-score-btn-3" onclick="increaseHomeScoreThree()">+3</button>
+                <div id="home-box" class="box">
+                    <p id="home-score" class="score">0</p>
+                </div>
+                <div class="score-btn-cont">
+                    <button class="score-btn" onclick="homeAddOne()">+1</button>
+                    <button class="score-btn" onclick="homeAddTwo()">+2</button>
+                    <button class="score-btn" onclick="homeAddThree()">+3</button>
+                </div>
             </div>
-            <div>
+            <div class="team">
                 <h3>GUEST</h3>
-                <h2 id="guest-score" class="score">0</h2>
-                <button id="guest-score-btn-1" onclick="increaseGuestScoreOne()">+1</button>
-                <button id="guest-score-btn-2" onclick="increaseGuestScoreTwo()">+2</button>
-                <button id="guest-score-btn-3" onclick="increaseGuestScoreThree()">+3</button>
+                <div id="guest-box" class="box">
+                    <p id="guest-score" class="score">0</p>
+                </div>
+                <div class="score-btn-cont">
+                    <button class="score-btn" onclick="guestAddOne()">+1</button>
+                    <button class="score-btn" onclick="guestAddTwo()">+2</button>
+                    <button class="score-btn" onclick="guestAddThree()">+3</button>
+                </div>
+            </div>
+            <div id="control-btn-cont">
+                <button id="new-game-btn" onclick="newGame()">New Game</button>
             </div>
         </div>
         <script src="index.js"></script>
