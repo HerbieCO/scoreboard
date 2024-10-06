@@ -5,27 +5,29 @@
         <link rel="stylesheet" href="/CursedTimerUlil-Aznm.ttf">
     </head>
     <body>
-        <div id="container">
-            <div class="team">
-                <h3>HOME</h3>
-                <div id="home-box" class="box">
-                    <p id="home-score" class="score">0</p>
+        <div id="scoreboard">
+            <div id="main">
+                <div class="team">
+                    <h3>HOME</h3>
+                    <div id="home-box" class="box">
+                        <p id="home-score" class="score">0</p>
+                    </div>
+                    <div class="score-btn-cont">
+                        <button class="score-btn" onclick="homeAddOne()">+1</button>
+                        <button class="score-btn" onclick="homeAddTwo()">+2</button>
+                        <button class="score-btn" onclick="homeAddThree()">+3</button>
+                    </div>
                 </div>
-                <div class="score-btn-cont">
-                    <button class="score-btn" onclick="homeAddOne()">+1</button>
-                    <button class="score-btn" onclick="homeAddTwo()">+2</button>
-                    <button class="score-btn" onclick="homeAddThree()">+3</button>
-                </div>
-            </div>
-            <div class="team">
-                <h3>GUEST</h3>
-                <div id="guest-box" class="box">
-                    <p id="guest-score" class="score">0</p>
-                </div>
-                <div class="score-btn-cont">
-                    <button class="score-btn" onclick="guestAddOne()">+1</button>
-                    <button class="score-btn" onclick="guestAddTwo()">+2</button>
-                    <button class="score-btn" onclick="guestAddThree()">+3</button>
+                <div class="team">
+                    <h3>GUEST</h3>
+                    <div id="guest-box" class="box">
+                        <p id="guest-score" class="score">0</p>
+                    </div>
+                    <div class="score-btn-cont">
+                        <button class="score-btn" onclick="guestAddOne()">+1</button>
+                        <button class="score-btn" onclick="guestAddTwo()">+2</button>
+                        <button class="score-btn" onclick="guestAddThree()">+3</button>
+                    </div>
                 </div>
             </div>
             <div id="control-btn-cont">
