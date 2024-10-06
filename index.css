@@ -19,6 +19,7 @@ body {
     font-family: Verdana;
     background-color: #05070F;
     text-align: center;
+    margin: 20px;
 }
 
 #scoreboard {
@@ -28,6 +29,7 @@ body {
     height: 385px;
     width: 575px;
     background-color: #1B244A;
+    margin: 20px auto;
 }
 
 #main {
