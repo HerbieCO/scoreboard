@@ -5,12 +5,6 @@ font-weight: normal;
 font-style: normal;
 }
 
-body {
-    font-family: Verdana;
-    background-color: #05070F;
-    text-align: center;
-}
-
 h3 {
     font-size: 40px;
     margin: 0;
@@ -21,19 +15,30 @@ h3 {
     border: dotted white 1px;
 }
 
-#container {
+body {
+    font-family: Verdana;
+    background-color: #05070F;
+    text-align: center;
+}
+
+#scoreboard {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     height: 385px;
     width: 575px;
     background-color: #1B244A;
-    margin: 40px auto;
-    align-items: center;
+}
+
+#main {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .team {
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .box {
@@ -41,20 +46,18 @@ h3 {
     color: #F94F6D;
     font-family: "CursedTimer";
     font-size: 90px;
-    margin: 25px 0;
     height: 120px;
-    width: 100%;
 }
 
 .score {
     margin: 0;
     padding: 18px;
+    width: 175px;
 }
     
 .score-btn-cont {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-around;
 }
 
 .score-btn {
@@ -68,7 +71,7 @@ h3 {
 }
 
 #control-btn-cont {
-    width: 100%;
+    padding: 10px;
 }
 
 #new-game-btn {
@@ -78,6 +81,6 @@ h3 {
     background-color: #9AABD8;
     border-radius: 5px;
     border: none;
-    padding: 10px 20px;
+    padding: 0 15px;
     font-size: 18px;
 }
