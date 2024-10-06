@@ -1,35 +1,66 @@
-let homeScoreEl =document.getElementById("home-score")
+let home = document.getElementById("home-score")
+let homeStyle = document.getElementById('home-box').style
+let guest = document.getElementById("guest-score")
+let guestStyle = document.getElementById('guest-box').style
 let homeScore = 0
-
-let guestScoreEl =document.getElementById("guest-score")
 let guestScore = 0
 
-function increaseHomeScoreOne(){
+function homeAddOne() {
     homeScore += 1
-    homeScoreEl.textContent = homeScore
+    home.textContent = homeScore
+    scoreBackground()
 }
 
-function increaseHomeScoreTwo(){
+function homeAddTwo() {
     homeScore += 2
-    homeScoreEl.textContent = homeScore
+    home.textContent = homeScore
+    scoreBackground()
 }
 
-function increaseHomeScoreThree(){
+function homeAddThree() {
     homeScore += 3
-    homeScoreEl.textContent = homeScore
+    home.textContent = homeScore
+    scoreBackground()
 }
 
-function increaseGuestScoreOne(){
+function guestAddOne() {
     guestScore += 1
-    guestScoreEl.textContent = guestScore
+    guest.textContent = guestScore
+    scoreBackground()
 }
 
-function increaseGuestScoreTwo(){
+function guestAddTwo() {
     guestScore += 2
-    guestScoreEl.textContent = guestScore
+    guest.textContent = guestScore
+    scoreBackground()
 }
 
-function increaseGuestScoreThree(){
+function guestAddThree() {
     guestScore += 3
-    guestScoreEl.textContent = guestScore
+    guest.textContent = guestScore
+    scoreBackground()
+}
+
+function newGame() {
+    homeScore = 0
+    home.textContent = homeScore
+    guestScore = 0
+    guest.textContent = guestScore
+    homeStyle.boxShadow="unset"
+    guestStyle.boxShadow="unset"
+}
+
+function scoreBackground() {
+    if (homeScore > guestScore) {
+        homeStyle.boxShadow="0px 0px 15px 4px #52CC00"
+        guestStyle.boxShadow="unset"
+    }
+    else if (guestScore > homeScore) {
+        homeStyle.boxShadow="unset"
+        guestStyle.boxShadow="0px 0px 15px 4px #52CC00"
+    }
+    else {
+        homeStyle.boxShadow="0px 0px 15px 4px #FFA500"
+        guestStyle.boxShadow="0px 0px 15px 4px #FFA500"
+    }
 }
