@@ -65,6 +65,7 @@ body {
 .score-btn {
     height: 45px;
     width: 45px;
+    padding: 0;
     color: #9AABD8;
     background-color: #1B244A;
     border: solid 1px #9AABD8;
